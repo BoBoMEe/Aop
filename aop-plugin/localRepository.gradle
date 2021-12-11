@@ -1,0 +1,38 @@
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId POM_GROUP
+                artifactId POM_ARTIFACT_ID
+                version POM_VERSION
+                from components.java
+            }
+        }
+        repositories {
+            maven{
+                url uri('../repo')
+            }
+        }
+    }
+}
+
+/*
+ * *********************************************************
+ *
+ *   ./gradlew uploadArchives
+ *
+ * *********************************************************
+ *
+ *  1.在项目中新建gradle.properties文件，然后配置如下属性：
+ *
+ *  #上传构件的信息
+ *  POM_GROUP=                            //组织名
+ *  POM_ARTIFACT_ID=                  //项目名
+ *  POM_VERSION=                     //版本名
+ *
+ *  compile 'POM_GROUP:POM_ARTIFACT_ID:POM_VERSION'
+ *
+ *
+ */

@@ -1,0 +1,12 @@
+plugins {
+    id 'groovy'
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:7.0.2'
+    implementation 'org.aspectj:aspectjtools:1.9.7'
+}
+
+apply from: "./localRepository.gradle"

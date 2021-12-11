@@ -6,13 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/aop_checker1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="AOP_Checker1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aop_checker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AOP_Checker2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aop_checker1" />
+
+    <Button
+        android:id="@+id/aop_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AOP_Toast"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aop_checker2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

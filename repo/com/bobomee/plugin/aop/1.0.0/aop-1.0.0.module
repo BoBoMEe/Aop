@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.bobomee.plugin",
+    "module": "aop",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "aop-1.0.0.jar",
+          "url": "aop-1.0.0.jar",
+          "size": 9533,
+          "sha512": "32da5146fa31f01a531c578e3830ec438dc784e1dc51d6212ca0c7991694222f1c2376f14708824d1381de28b556c1e08f81cd3d8cb68da7277271ba3396b198",
+          "sha256": "1015986906324463b0b5ecffb66188ca9df34db4baf0e660744c0e724466326b",
+          "sha1": "3085bc8f52ebb1a5da9161d79728f86c2ba8a546",
+          "md5": "0c56cd9933a6cc6730280b5205f6c96d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.0.2"
+          }
+        },
+        {
+          "group": "org.aspectj",
+          "module": "aspectjtools",
+          "version": {
+            "requires": "1.9.7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "aop-1.0.0.jar",
+          "url": "aop-1.0.0.jar",
+          "size": 9533,
+          "sha512": "32da5146fa31f01a531c578e3830ec438dc784e1dc51d6212ca0c7991694222f1c2376f14708824d1381de28b556c1e08f81cd3d8cb68da7277271ba3396b198",
+          "sha256": "1015986906324463b0b5ecffb66188ca9df34db4baf0e660744c0e724466326b",
+          "sha1": "3085bc8f52ebb1a5da9161d79728f86c2ba8a546",
+          "md5": "0c56cd9933a6cc6730280b5205f6c96d"
+        }
+      ]
+    }
+  ]
+}

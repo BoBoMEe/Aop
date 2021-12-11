@@ -1,0 +1,74 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.bobomee.aop",
+    "module": "runtime",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "runtime-1.0.0.aar",
+          "url": "runtime-1.0.0.aar",
+          "size": 3465,
+          "sha512": "c74894e2d70a64802487dcf35bf5e362ec83968e52961f6edf2633884f3fa0ed2193e5192ee445f293ada0fa835f2bbadc525ca90bd99bc9eedb199302571225",
+          "sha256": "df492d2a72996a69273d3d0fcc9962569dd43cd92cca3c1bf0e0cd672c32edad",
+          "sha1": "6778430e6daee2de4b2f9f36dee3484dc7a462ad",
+          "md5": "0f10a93d7d371382ff272a78b1ae8254"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.aspectj",
+          "module": "aspectjrt",
+          "version": {
+            "requires": "1.9.7"
+          }
+        },
+        {
+          "group": "com.bobomee.aop",
+          "module": "annotation",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "runtime-1.0.0.aar",
+          "url": "runtime-1.0.0.aar",
+          "size": 3465,
+          "sha512": "c74894e2d70a64802487dcf35bf5e362ec83968e52961f6edf2633884f3fa0ed2193e5192ee445f293ada0fa835f2bbadc525ca90bd99bc9eedb199302571225",
+          "sha256": "df492d2a72996a69273d3d0fcc9962569dd43cd92cca3c1bf0e0cd672c32edad",
+          "sha1": "6778430e6daee2de4b2f9f36dee3484dc7a462ad",
+          "md5": "0f10a93d7d371382ff272a78b1ae8254"
+        }
+      ]
+    }
+  ]
+}
