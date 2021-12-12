@@ -40,8 +40,10 @@ plugins {
     id 'aop'
 }
 
-implementation 'com.bobomee.aop:annotation:1.0.0'
-implementation 'com.bobomee.aop:runtime:1.0.0'
+dependencies {
+    implementation 'com.bobomee.aop:annotation:1.0.0'
+    implementation 'com.bobomee.aop:runtime:1.0.0'
+}
 ```
 
 # 参考blog
