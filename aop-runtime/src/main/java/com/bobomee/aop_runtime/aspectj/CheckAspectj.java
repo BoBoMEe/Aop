@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class CheckAspectj {
     private static final String TAG = "CheckAspectj";
-    public static final String ANNOTATION = "com.bobomee.aop_annotation.Check";
+    private static final String ANNOTATION = "com.bobomee.aop_annotation.Check";
 
     @Pointcut("within(@" + ANNOTATION + " *)")
     public void withinAnnotatedClass() {

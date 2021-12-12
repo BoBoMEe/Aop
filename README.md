@@ -11,16 +11,37 @@
 
 引入方式：
 
+- project.build.gradle
+
 ```groovy
+buildscript {
+    repositories {
+        repositories {
+            maven { url uri('./repo')}
+            //...
+        }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.2"
+        classpath "com.bobomee.plugin:aop:1.0.0"
+    }
+}
+```
+
+- application.build.gradle
+
+```groovy
+repositories {
+    maven { url uri('../repo')}
+}
+
 plugins {
     id 'com.android.application'
     id 'aop'
 }
-```
 
-```groovy
- implementation 'com.bobomee.aop:annotation:1.0.0'
- implementation 'com.bobomee.aop:runtime:1.0.0'
+implementation 'com.bobomee.aop:annotation:1.0.0'
+implementation 'com.bobomee.aop:runtime:1.0.0'
 ```
 
 # 参考blog
